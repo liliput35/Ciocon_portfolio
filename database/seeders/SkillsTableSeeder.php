@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 class SkillsTableSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Run the database seeds. Lab ACtivity 2
      */
     public function run(): void
     {

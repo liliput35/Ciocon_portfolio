@@ -37,5 +37,9 @@ class DatabaseSeeder extends Seeder
 
         //contacts page
         $this->call(ContactInfoTableSeeder::class);
+
+        //experience page 
+        $this->call(ExperiencesTableSeeder::class);
+
     }
 }

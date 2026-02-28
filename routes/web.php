@@ -21,14 +21,14 @@ Route::get('/skills', [SkillController::class, 'index']);
 Route::get('/project', [ProjectController::class, 'index']);
 Route::get('/experience', [ExperienceController::class, 'index']);
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/skills', function () {
+    return view('skills');
 });
 
 Route::get('/projects', function () {
     return view('projects');
 });
 
-Route::get('/contacts', function () {
-    return view('contacts');
+Route::get('/contact', function () {
+    return view('contact');
 });

@@ -3,10 +3,10 @@
         <a href="">{{ $profile->name ?? 'Default Name' }}</a>
         
         <ul>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Experience</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="{{ url('/skills') }}">Skills</a></li>
+            <li><a href="{{ url('/projects') }}">Projects</a></li>
+            <li><a href="{{ url('/experience') }}">Experience</a></li>
+            <li><a href="{{ url('/contact') }}">Contact</a></li>
         </ul>
     </div>
 </div>

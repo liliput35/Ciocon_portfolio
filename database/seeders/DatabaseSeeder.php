@@ -19,7 +19,23 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]); lab act 2
 
+        //default
         $this->call(SkillsTableSeeder::class);
         $this->call(ProfilesTableSeeder::class);
+
+        //home page
+        $this->call(HomepageDataTableSeeder::class);
+        $this->call(RecentWorksTableSeeder::class);
+
+        //skills page
+        $this->call(AboutDescriptionSeeder::class);
+        $this->call(MainSkillsTableSeeder::class);
+        $this->call(TechStackTableSeeder::class);
+
+        //projects page
+        $this->call(ProjectsTableSeeder::class);
+
+        //contacts page
+        $this->call(ContactInfoTableSeeder::class);
     }
 }

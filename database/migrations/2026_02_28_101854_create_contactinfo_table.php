@@ -6,18 +6,18 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-   /**
+    /**
      * Run the migrations.
      */
     public function up(): void
     {
-        Schema::create('projects', function (Blueprint $table) {
+        Schema::create('contactinfo', function (Blueprint $table) {
             $table->id();
-            $table->string('project_name');
-            $table->string('project_tech_stack');
-            $table->string('project_link');
-            $table->string('project_img_addr');
             $table->timestamps();
+            $table->string('contact_name');
+            $table->string('contact_info');
+            $table->string('contact_link');
+            $table->string('contact_icon');
         });
     }
 
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('projects');
+        Schema::dropIfExists('contactinfo');
     }
 };

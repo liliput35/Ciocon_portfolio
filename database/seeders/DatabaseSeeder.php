@@ -20,5 +20,6 @@ class DatabaseSeeder extends Seeder
         // ]); lab act 2
 
         $this->call(SkillsTableSeeder::class);
+        $this->call(ProfilesTableSeeder::class);
     }
 }

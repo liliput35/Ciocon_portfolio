@@ -3,18 +3,9 @@
 @section ('title', 'Home')
 
 @section('content')
-<div class="row align-items-center">
-  <div class="col-md-4 text-center">
-    <img>
-  </div>
 
-  <div class="col-md-8">
-    <h1> {{ $profile->first_name}} </h1>
-
-    <ul class="list-unstyled">
-
-    </ul>
-    
-  </div>
+<div class="container">
+    <h1>{{$profile->name}}</h1>
+    <h1>Age: {{$profile-> age}}</h1>
 </div>
 @endsection

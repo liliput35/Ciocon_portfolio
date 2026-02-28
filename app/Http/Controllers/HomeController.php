@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $profiles = Profile::all();
-        return view('pages.home', compact('profiles'));
+        $profile = Profile::first();
+        return view('pages.home', compact('profile'));
     }
 }

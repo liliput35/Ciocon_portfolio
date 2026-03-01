@@ -6,18 +6,18 @@
 
 <div class="hero-section">
     <div class="container">
-        <h1>{{$homepage -> main_header}}</h1>
-        <p>{{$homepage -> about_info}}</p>
+        <h1 class="fw-bold">{{$homepage -> main_header}}</h1>
+        <p class="w-75 w-md-50 mb-4">{{$homepage -> about_info}}</p>
         <a href="">{{$homepage -> cta_text}}</a>
     </div>
 </div>
 
 <div class="recent-works-section">
     <div class="container">
-        <div class="recent-header">
-            <h1>Recent Works</h1> 
+        <div class="recent-header d-flex align-items-center">
+            <h1 class="me-3 fw-bold">Recent Works</h1> 
             <div class="diagonal"></div>
-            <a href="">view all</a>
+            <a href="" class="fw-light text-decoration-underline">view all</a>
         </div>
     </div>
     <div class="container">
@@ -27,7 +27,8 @@
 
                 <h3>{{$recentWork-> name}}</h3>
                 <p>{{$recentWork-> description}}</p>
-                <p>{{$recentWork-> tech_stack}}</p>
+                <p class="proj-ts">{{$recentWork-> tech_stack}}</p>
+                <img src="{{asset('images/' . $recentWork->img_addr)}}" alt="">
             </div>
         @endforeach
     </div>

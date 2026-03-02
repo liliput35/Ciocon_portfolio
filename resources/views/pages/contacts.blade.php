@@ -8,6 +8,7 @@
 <div class="contact-section">
     <div class="container">
         <h2>Contacts</h2>
+        <p>Get in touch for any inquiries and questions</p>
 
         @foreach($contacts as $contact)
             <div class="contact-group">

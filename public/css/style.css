@@ -209,3 +209,36 @@ ul li {
 .experience-section ul li h4 span {
     font-weight: 600;
 }
+
+.contact-section .container { 
+    height: 80vh;
+}
+
+.contact-section h2 { 
+    font-size: 3em;
+    font-weight: 600;
+    margin-top: 2em; 
+}
+
+.contact-section p { 
+    font-size: 1.25em;
+    color: #1A461E;
+    margin-bottom: 2em;
+}
+
+.contact-group { 
+    margin-bottom: 1em;
+    border-bottom: solid 1px #f2f2f2;
+    padding-bottom: 0.5em;
+}
+
+.contact-group h5 { 
+    color: #808080;
+    font-size: 1.25em;
+    margin-bottom: 0;
+}
+
+.contact-group a { 
+    font-size: 1.25em;
+    font-weight: 500;
+}

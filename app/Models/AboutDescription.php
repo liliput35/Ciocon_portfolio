@@ -10,6 +10,7 @@ class AboutDescription extends Model
     protected $table = 'aboutdesc' ;
     protected $fillable = [
         'about_header', 
+        'about_img_addr', 
         'about_text'
     ] ;
 }

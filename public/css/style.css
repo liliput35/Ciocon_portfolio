@@ -100,6 +100,13 @@ ul li {
     margin-bottom: 1em;
 }
 
+.skills-about-section img { 
+    width: 25%; 
+    border-radius: 20px;
+    max-height: 200px;
+    margin-bottom: 1em;
+}
+
 .skills-about-section p { 
     margin-bottom: 4em;
 }
@@ -137,6 +144,10 @@ ul li {
     color: #808080;
     font-size: 1em;
     font-weight: 500;
+}
+
+.tech-stack-section ul {
+    flex-wrap: wrap;
 }
 
 .projects-section h2 { 

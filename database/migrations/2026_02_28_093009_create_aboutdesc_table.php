@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('about_header');
+            $table->string('about_img_addr');
             $table->text('about_text');
         });
     }

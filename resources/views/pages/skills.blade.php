@@ -7,6 +7,7 @@
 <div class="skills-about-section">
     <div class="container">
         <h1 class="">{{$about-> about_header}}</h1> 
+        <img src="{{asset('images/' . $about->about_img_addr)}}" alt="">
 
         <p class="fs-3">{!!$about-> about_text!!}</p>
     </div>

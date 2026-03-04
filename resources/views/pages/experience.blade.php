@@ -5,7 +5,7 @@
 @section('content')
 
 
-<div class="experience-section vh-100">
+<div class="experience-section ">
     <div class="container">
         <h2>Experience</h2>
         <p class="sub-header">My journey as an aspiring software engineer</p>

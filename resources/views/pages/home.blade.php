@@ -7,7 +7,7 @@
 <div class="hero-section">
     <div class="container">
         <h1 class="fw-bold">{{$homepage -> main_header}}</h1>
-        <p class="w-75 w-md-50 mb-4">{{$homepage -> about_info}}</p>
+        <p class="mb-4">{{$homepage -> about_info}}</p>
         <a href="">{{$homepage -> cta_text}}</a>
     </div>
 </div>
@@ -20,7 +20,10 @@
             <a href="" class="fw-light text-decoration-underline">view all</a>
         </div>
     </div>
-    <div class="container">
+
+    <div class="recent-border"></div>
+
+    <div class="container recent-works-container">
         @foreach($recentWorks as $recentWork)
             <div class="recent-work">
                 <h2>0{{$recentWork-> id}}</h2>

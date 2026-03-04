@@ -26,21 +26,25 @@
 
 <div class="tech-stack-section">
     <div class="container">
-        <h3>Tech Stack</h3>
 
-        <h5>Frontend</h5>
-        <ul class="d-flex">
-            @foreach($frontendTech as $frontendTech)
-                <li class="me-3">{{$frontendTech-> tech}}</li>
-            @endforeach
-        </ul>
+        <div class="tech-row">
+            <h3>Tech Stack</h3>
 
-        <h5>Backend</h5>
-        <ul class="d-flex">
-            @foreach($backendTech as $backendTech)
-                <li class="me-3">{{$backendTech-> tech}}</li>
-            @endforeach
-        </ul>
+            <h5>Frontend</h5>
+            <ul class="d-flex">
+                @foreach($frontendTech as $frontendTech)
+                    <li class="me-3">{{$frontendTech-> tech}}</li>
+                @endforeach
+            </ul>
+
+            <h5>Backend</h5>
+            <ul class="d-flex">
+                @foreach($backendTech as $backendTech)
+                    <li class="me-3">{{$backendTech-> tech}}</li>
+                @endforeach
+            </ul>
+        </div>
+        
         
     </div>
 </div>

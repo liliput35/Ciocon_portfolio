@@ -8,7 +8,7 @@
 <div class="experience-section vh-100">
     <div class="container">
         <h2>Experience</h2>
-
+        <p class="sub-header">My journey as an aspiring software engineer</p>
         <ul>
             @foreach($experiences as $experience)
                 <li class="experience-group">

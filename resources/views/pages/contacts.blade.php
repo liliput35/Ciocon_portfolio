@@ -12,9 +12,17 @@
 
         @foreach($contacts as $contact)
             <div class="contact-group">
-                <h5>{{$contact-> contact_name}}</h5>
-                <a href="{{$contact-> contact_link}}">{{$contact-> contact_info}}</a>
+                <h5>{{ $contact->contact_name }}</h5>
 
+                <a href="{{ $contact->contact_link }}">
+                    {{ $contact->contact_info }}
+
+                    @if($contact->contact_link !== '#')
+                        <img src="{{ asset('images/diagonal-arrow.png') }}" 
+                            alt="icon" 
+                            class="w-auto">
+                    @endif
+                </a>
             </div>
         @endforeach
     </div>

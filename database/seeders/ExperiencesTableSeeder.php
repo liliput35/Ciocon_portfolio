@@ -12,6 +12,11 @@ class ExperiencesTableSeeder extends Seeder
         DB::table('experiences')->insert([
             [
                 'duration' => 'Present',
+                'experience' => 'Frontend Officer, <span>Google Developer Groups on Campus USLS</span>',
+                'desc' => 'Collaborated in developing a promotional events website'
+            ],
+            [
+                'duration' => 'Present',
                 'experience' => 'BS Computer Science, <span>University of St. La Salle</span>',
                 'desc' => 'Currently learning Computer Science through a 4 year course'
             ],

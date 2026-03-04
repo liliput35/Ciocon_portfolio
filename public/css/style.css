@@ -78,12 +78,15 @@ ul li {
     color: #1A461E;
     font-size: 3em;
     font-weight: 400;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.25em; 
 }
 
 .recent-work h3 { 
     font-size: 2em;
     font-weight: 600;
+    padding-bottom: 0.25em;
+    border-bottom: solid 2px #e5e5e5;
+
 }
 
 .recent-work .proj-ts { 
@@ -92,12 +95,13 @@ ul li {
 
 .recent-work img { 
     margin-top: 1em; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
 }
 
 .skills-about-section h1 { 
-    margin-top: 3em;
-    color: #808080;
-    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 3em;
+    font-weight: 600;
 }
 
 .skills-about-section img { 
@@ -154,7 +158,12 @@ ul li {
     font-size: 3em;
     font-weight: 600;
     margin-top: 2em;
-    margin-bottom: 1em;
+}
+
+.projects-section p.sub-header { 
+    font-size: 1.25em;
+    color: #1A461E;
+    margin-bottom: 2em;
 }
 
 .project-group { 
@@ -165,11 +174,25 @@ ul li {
     height: 100%;
 }
 
+.project-group span.tech-badge {
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 15px; 
+    margin-right: 5px;
+    color: #808080;
+    font-size: 0.9em;
+}
+
 .experience-section h2 { 
     font-size: 3em;
     font-weight: 600;
     margin-top: 2em; 
-    margin-bottom: 1em;
+}
+
+.experience-section p.sub-header { 
+    font-size: 1.25em;
+    color: #1A461E;
+    margin-bottom: 2em;
 }
 
 .experience-section ul { 

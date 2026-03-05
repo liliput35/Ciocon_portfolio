@@ -9,7 +9,7 @@
     <div class="container">
         <h1 class="fw-bold">{{$homepage -> main_header}}</h1>
         <p class="mb-4">{{$homepage -> about_info}}</p>
-        <a href="">{{$homepage -> cta_text}}</a>
+        <a href="{{ url('/skills') }}">{{$homepage -> cta_text}}</a>
     </div>
 </div>
 
@@ -20,7 +20,7 @@
         <div class="recent-header d-flex align-items-center">
             <h1 class="me-3 fw-bold">Recent Works</h1> 
             <div class="diagonal"></div>
-            <a href="" class="fw-light text-decoration-underline">view all</a>
+            <a href="{{ url('/projects') }}" class="fw-light text-decoration-underline">view all</a>
         </div>
     </div>
 

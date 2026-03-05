@@ -4,6 +4,7 @@
 
 @section('content')
 
+
 <div class="hero-section">
     <div class="container">
         <h1 class="fw-bold">{{$homepage -> main_header}}</h1>
@@ -11,6 +12,8 @@
         <a href="">{{$homepage -> cta_text}}</a>
     </div>
 </div>
+
+
 
 <div class="recent-works-section">
     <div class="container">

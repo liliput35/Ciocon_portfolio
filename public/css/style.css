@@ -32,6 +32,29 @@ ul li {
     background-color: #f2f2f2;
 }
 
+.navigation-bar ul li a {
+    position: relative;
+} 
+
+.navigation-bar ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 1px;
+    background-color: black;
+
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navigation-bar ul li a:hover::before {
+    transform: scaleX(1);
+}
+
 .footer { 
     background-color: #f2f2f2;
 }
@@ -69,10 +92,24 @@ ul li {
 
 .recent-header h1 { 
     font-size: 2.5em;
+    color: #1A461E;
+}
+
+.diagonal {
+    width: 45px;
+    height: 1px;
+    background-color: black;
+    margin-right: 10px;
+    transform: rotate(-45deg);
 }
 
 .recent-work {
     margin-bottom: 5em;
+    transition: 1s;
+}
+
+.recent-work:hover {
+    transform: translateY(-4em);
 }
 
 .recent-work h2 { 
@@ -173,6 +210,16 @@ ul li {
     padding: 1.5em ;
     border-radius: 20px; 
     height: 100%;
+}
+
+.project-group img {
+    transition: 0.5s ;
+    transform: scale(1);
+}
+
+.projects-container a:hover img {
+    transform: scale(1.25);
+
 }
 
 .project-group span.tech-badge {
@@ -379,6 +426,10 @@ ul li {
 @media only screen and (min-width: 1230px) { 
     .hero-section .container h1 {
         font-size: 7.5em;
+    }
+
+    .recent-border {
+        width: 90%;
     }
 }
 

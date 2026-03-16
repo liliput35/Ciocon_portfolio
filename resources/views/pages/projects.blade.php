@@ -9,6 +9,9 @@
     <div class="container">
         <h2 class="">My Projects</h2> 
         <p class="sub-header">Some of my recent projects mostly from school</p>
+        <a href="{{ route('projects.create') }}" class="btn btn-primary mb-3">
+            Add New Project
+        </a>
 
         <div class="projects-container">
             @foreach($projects as $project)
@@ -16,6 +19,7 @@
                     <div class="project-group">
                         <h5 class="fw-bold fs-3">{{$project-> project_name}}</h5> 
                         <p class="mb-3">{{$project-> project_desc}}</p>
+
                         <div class="mb-5">
                             @foreach(explode(',', $project->project_tech_stack) as $tech)
                                 <span class="tech-badge">

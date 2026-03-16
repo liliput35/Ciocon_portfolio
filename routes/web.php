@@ -19,7 +19,7 @@ use App\Http\Controllers\ContactController;
 
 Route::get('/', [Homecontroller::class, 'index']);
 Route::get('/skills', [SkillController::class, 'index']);
-Route::get('/projects', [ProjectController::class, 'index']);
+Route::resource('projects', ProjectController::class);
 Route::get('/experience', [ExperienceController::class, 'index']);
 Route::get('/contact', [ContactController::class, 'index'])->middleware('log.access');
 

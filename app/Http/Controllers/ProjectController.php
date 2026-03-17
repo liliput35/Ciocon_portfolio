@@ -44,8 +44,7 @@ class ProjectController extends Controller
     //EDIT FORM
     public function edit(Project $project)
     {
-        return view('pages.project_edit', compact('projects'));
-
+        return view('pages.project_edit', compact('project'));
     }
 
     //UPDATE DATA
@@ -59,11 +58,10 @@ class ProjectController extends Controller
             'project_img_addr' => 'required'
         ]);
 
-        Project::update($validated) ; 
+        $project->update($validated);
 
-        return redirect()->route('pages.projects')
-                         ->with('success', 'Project updated successfully!');
-            
+        return redirect()->route('projects.index')
+                        ->with('success', 'Project updated successfully!');
     }
 
 }

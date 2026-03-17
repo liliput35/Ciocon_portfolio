@@ -236,7 +236,19 @@ ul li {
     animation: fadeIn 1.5s forwards;
     font-size: 1.25em;
     color: #1A461E;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+}
+
+.projects-section .add-proj-btn { 
+    padding: 5px 10px;
+    background-color: #1A461E;
+    color: white; 
+    border-radius: 10px;
+    animation: fadeIn 1.5s forwards;
+}
+
+.projects-container { 
+    margin-top: 2em;
 }
 
 .project-group { 
@@ -252,32 +264,32 @@ ul li {
     transform: scale(1);
 }
 
-.projects-container a {
+.projects-container div.project-group {
     opacity: 0;
     animation: fadeIn 0.8s ease forwards;
 }
 
-.projects-container > a:nth-child(1) {
+.projects-container > div.project-group:nth-child(1) {
     animation-delay: 0.25s;
 }
 
-.projects-container > a:nth-child(2) {
+.projects-container > div.project-group:nth-child(2) {
     animation-delay: 0.35s;
 }
 
-.projects-container > a:nth-child(3) {
+.projects-container > div.project-group:nth-child(3) {
     animation-delay: 0.5s;
 }
 
-.projects-container > a:nth-child(4) {
+.projects-container > div.project-group:nth-child(4) {
     animation-delay: 0.75s;
 }
 
-.projects-container > a:nth-child(5) {
+.projects-container > div.project-group:nth-child(5) {
     animation-delay: 1s;
 }
 
-.projects-container a:hover img {
+.projects-container div.project-group:hover img {
     transform: scale(1.25);
 
 }
